@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>track.task</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <div class="logo">track.task</div>
+        <div class="current-group">
+          <div class="border">Current Group</div>
+        </div>
+        <div class="border group-options">
+          <button class="create-group" type="button">Create Group</button>
+          <button class="select-group" type="button">Select Group</button>
+          <button class="delete-group" type="button">Delete Group</button>
+        </div>
+      </div>
+      <div class="main">
+
+        <div class="homepage">
+          <h2>Welcome to our the task tracking app!</h2>
+          <p>To start please create a <b>new group</b> of tasks.</p>
+        </div>
+      </div>
+
+      <div class="border popup" id="create-group-popup">
+        <div class="prompt">Input group name:</div>
+        <input type="text" class="border" id="create-group-name">
+        <button class="border" >Confirm</button>
+      </div>
+      <div class="border popup" id="delete-group-popup">
+        <select class="group-list" id="delete-list"></select>
+        <button class="border" >Confirm</button>
+      </div>
+      <div class="border popup" id="select-group-popup">
+        <select class="group-list" id="select-list"></select>
+        <button class="border" >Confirm</button>
+      </div>
+
+      <button id="test">Taskpage</button>
+      <div class="taskpage"></div>
+
+      <div class="footer"> <div class="textbox">Created by @</div> </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
